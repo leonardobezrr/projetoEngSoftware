@@ -12,6 +12,7 @@ Leonardo     | Cliente | Leonardobezerra05@gmail.com
 Ricardo         | Desenvolvedor  | ricardo.alencar.122@ufrn.edu.br
 Luís      | Gerente | Luisf311220@gmail.com
 Gabriel      | Desenvolvedor | gabriel.lima.112@ufrn.edu.br
+Charles      | Desenvolvedor | charleseduardofaria@gmail.com
 
 ### Matriz de Competências
 
@@ -22,6 +23,7 @@ Leonardo     | HTML, CSS, JavaScript, React, Next, Golang, PostgreSQL, Python. |
 Ricardo        | HTML, CSS, JavaScript, React, Golang, MySQL, PostgreSQL, PHP, WordPress, curso ténico em informática. |
 Luís       | HTML, CSS, Javascript , C, C++, QT creator, QT designer. |
 Gabriel       | HTML, CSS, JavaScript, React, Next, Vue.js, UI/UX design, Figma, MariaDB, python, C, Angular, TypeScript. |
+Charles      | Java, Spring Boot, Laravel, HTML, CSS, JQuery, Postgres, MySQL, Figma, Modelagem de Dados |
 
 
 ## Perfis dos Usuários
