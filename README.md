@@ -4,7 +4,7 @@ Discentes:
 <br>
 Breno Costa Porfírio
 <br>
-Diego Alves de Araújo
+Charles Eduardo Araújo de Faria
 <br>
 Gabriel Antônio Ferreira de Lima
 <br>
