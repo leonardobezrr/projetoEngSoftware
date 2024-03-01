@@ -83,3 +83,68 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **TA01.04** | O gerente localiza o cadastro do funcionário no sistema (include Login) |
 | **TA01.04** | O gerente altera as informações e salva no sistema|
 | **TA01.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso” |
+
+### User Story US02 - Gerenciar produto
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Esse processo é responsável por fazer cadastro, exclusão, edição e visualização dos produtos cadastrados no sistema. As informações constantes neste cadastro são: Nome, código de barras e o CNPJ do fornecedor |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF01          | Cadastrar produto |
+| RF02          | Alterar produto  |
+| RF03          | Consultar produto        |
+| RF04          | Excluir produto |
+| RF05          | Vizualizar detalhes do produto |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | -                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA02.01** | O funcionário solicita uma amostra do produto para pode pegar suas informações|
+| **TA02.01** | O funcionário recebe o produto  |
+| **TA02.01** | O funcionário acessa o sistema com sua conta (include Login)|
+| **TA02.01** | O funcionário preenche o cadastro com as informações descritas no produto|
+| **TA02.01** | O funcionário conclui o cadastro e salva as informações (extend Gerar Log) |
+| **TA02.01** | O sistema exibe uma mensagem de “Cadastro realizada com sucesso”|
+
+--------------------------------------------------------------------------------------
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA02.02** | O funcionário informa ao sistema o código de barras do produtor no sistema (include Login)|
+| **TA02.02** | O sistema exibe na tela todas as informações do fornecedor |
+-------------------------------------------------------------------------------------
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA02.03** | O funcionário consulta o cadastro do produto no sistema (include Login)|
+| **TA02.03** | O funcionário clica na opção excluir cadastro |
+| **TA02.03** | O sistema abre uma caixa de confirmação perguntando se o funcionário realmente deseja excluir o produto|
+| **TA02.03** | O funcionário escolhe a opção “SIM”|
+| **TA02.03** | O sistema exclui o produto e as alterações são salvas no sistema (extend Gerar Log)|
+| **TA02.03** | O sistema exibe uma mensagem de “Exclusão realizada com sucesso” |
+------------------------------------------------------------------------------------
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**  | **Descrição** |
+| **TA02.04** | O funcionário recebe a informação que um cadastro está com problema|
+| **TA02.04** | O funcionário solicita uma amostra do produto para que possa pegar os dados corretos |
+| **TA02.04** | O funcionário localiza o cadastro do produto no sistema (include Login) |
+| **TA02.04** | O funcionário altera as informações e salva no sistema. (extend Gerar Log) |
+| **TA02.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso”|
