@@ -269,3 +269,93 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **TA05.01** | O usuário coloca seu Login e Senha |
 | **TA05.01** | O sistema exibe uma mensagem de “Login realizado com sucesso”, enquanto o sistema carrega |
 | **TA05.01** | O usuário agora pode interagir com o sistema |
+
+### User Story US06 - Registrar entradas
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Faz um registro de todas as vezes que entra alguma mercadoria no sistema. As informações constantes neste registro são: data, nome do produto e CNPJ do fornecedor |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF04          | Registrar Nota Fiscal Eletrônica de entrada  |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA06.01** | O Registrar Entradas analisa automaticamente os arquivos de Gerenciar Produtos e Gerenciar Fornecedores a procura de novas entradas de produtos |
+| **TA06.01** | O Registrar Entradas organizará esses dados em um arquivo |
+
+### User Story US07 - Registrar saídas (venda)
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Responsável por realizar as saídas/vendas de mercadorias, logo em seguida será feito um registro das mesmas. As informações constantes neste registro são: data, nome do produto e CNPJ do fornecedor |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF05          | Gerar Nota Fiscal Eletrônica de Saída  |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA07.01** | O Sistema de vendas fornecerá os dados referentes às saídas para o Registrar saídas |
+| **TA07.01** | Registrar saídas organizará esses dados em um arquivo |
+
+### User Story US08 - Registrar Compras
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Responsável por registrar todas as compras feitas pelo gerente e após a confirmação de recebimento dos itens, o funcionário dará entrada dos mesmos no sistema. As informações constantes neste registro são: data, nome do produto e CNPJ do fornecedor, preço e quantidade |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF05          | Gerar Nota Fiscal Eletrônica de Saída  |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA08.01** | Ao detectar a falta de um produto o gerente irá requisitar a compra do mesmo para reabastecimento do estoque |
+| **TA08.01** | Caberá ao funcionário dar baixa no sistema quando os itens chegarem ao estoque |
