@@ -26,20 +26,16 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastrar Usuário |
-| RF02          | Alterar Usuário  |
-| RF03          | Consultar Usuários        |
-| RF04          | Excluir Usuário |
-| RF05          | Vizualizar detalhes do Usuário |
+| RF01          | Gerenciar usuários |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
 | **Prioridade**            | Essencial                           | 
-| **Estimativa**            | 8 h                                 | 
-| **Tempo Gasto (real):**   |                                     | 
-| **Tamanho Funcional**     | 7 PF                                | 
+| **Estimativa**            | 5 h                                 | 
+| **Tempo Gasto (real):**   | 2 h                                 | 
+| **Tamanho Funcional**     | 8 PF                                | 
 | **Analista**              | -                             | 
-| **Desenvolvedor**         | -                                  | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
 | **Revisor**               | -                               | 
 | **Testador**              | -                                | 
 
@@ -92,20 +88,16 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastrar produto |
-| RF02          | Alterar produto  |
-| RF03          | Consultar produto        |
-| RF04          | Excluir produto |
-| RF05          | Vizualizar detalhes do produto |
+| RF02          | Gerenciar produto  |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
 | **Prioridade**            | Essencial                           | 
 | **Estimativa**            | 8 h                                 | 
-| **Tempo Gasto (real):**   |                                     | 
+| **Tempo Gasto (real):**   | 10 h                                | 
 | **Tamanho Funcional**     | 7 PF                                | 
 | **Analista**              | -                             | 
-| **Desenvolvedor**         | -                                  | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
 | **Revisor**               | -                               | 
 | **Testador**              | -                                | 
 
@@ -148,3 +140,132 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **TA02.04** | O funcionário localiza o cadastro do produto no sistema (include Login) |
 | **TA02.04** | O funcionário altera as informações e salva no sistema. (extend Gerar Log) |
 | **TA02.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso”|
+
+### User Story US03 - Gerenciar fornecedor
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Esse processo é responsável por fazer cadastro, exclusão, edição e visualização dos fornecedores cadastrados no sistema. As informações constantes neste cadastro são: Razão social, nome fantasia, CNPJ, endereço, telefone e e-mail |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF06         | Gerenciar Fornecedores |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA03.01** | O funcionário solicita os documentos e informações necessárias diretamente ao fornecedor |
+| **TA03.01** | O fornecedor manda os documentos e o funcionário os recebe |
+| **TA03.01** | O funcionário acessa o sistema com sua conta (include Login)|
+| **TA03.01** | O funcionário preenche o cadastro com as informações recebidas |
+| **TA03.01** | O funcionário conclui o cadastro e salva as informações (extend Gerar Log) |
+| **TA03.01** | O sistema exibe uma mensagem de “Cadastro realizado com sucesso” |
+
+--------------------------------------------------------------------------------------
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA03.02** | O funcionário informa ao sistema o CNPJ do fornecedor no sistema (include Login) |
+| **TA03.02** | O sistema exibe na tela todas as informações do fornecedor |
+-------------------------------------------------------------------------------------
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA03.03** | O funcionário consulta o cadastro do fornecedor no sistema (include Login) |
+| **TA03.03** | O funcionário clica na opção excluir cadastro |
+| **TA03.03** | O sistema abre uma caixa de confirmação perguntando se o funcionário realmente deseja excluir o fornecedor |
+| **TA03.03** | O funcionário escolhe a opção “SIM” |
+| **TA03.03** | O sistema exclui o fornecedor e as alterações são salvas no sistema (extend Gerar Log) |
+| **TA03.03** | O sistema exibe uma mensagem de “Exclusão realizada com sucesso” |
+------------------------------------------------------------------------------------
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA03.04** | O fornecedor solicita que o seu cadastro seja atualizado |
+| **TA03.04** | O funcionário solicita ao fornecedor as informações necessárias para atualização |
+| **TA03.04** | O funcionário localiza o cadastro do fornecedor no sistema (include Login) |
+| **TA03.04** | O funcionário altera as informações e salva no sistema. (extend Gerar Log) |
+| **TA03.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso” |
+
+### User Story US04 - Gerar log
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Este caso de uso é capaz de gerar um histórico de todas as informações encontradas nos arquivos gerados pelos casos de uso Gerenciar Fornecedores, Gerenciar Produtos e Registrar Entradas. As informações constantes neste relatório são: Data, mudanças realizadas no Gerenciar Produtos, mudanças no Gerenciar Fornecedores e Registrar Entradas |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF02          | Gerenciar produtos  |
+| RF04          | Registrar Nota Fiscal Eletrônica de entrada |
+| RF05          | Gerar Nota Fiscal Eletrônica de Saída |
+| RF06          | Gerenciar Fornecedores |
+| RF07          | Gerar Log |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA04.01** | O funcionário solicitará que o Gerar Log gere um arquivo para verificação. |
+| **TA04.01** | O Gerar Log então pegará o arquivo gerado pelo caso de uso Gerenciar Fornecedores, Gerenciar Produtos e Registrar Entradas, e os justará em um único arquivo. |
+| **TA04.01** | O Gerar Log então retornará um arquivo para o funcionário com as informações geradas. |
+
+### User Story US05 - Login
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Permite que funcionários e gerentes acessem o sistema para fazer qualquer tipo de alteração que for necessária. As informações constantes são login e senha |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF01          | Gerenciar usuários  |
+| RF02          | Gerenciar produtos |
+| RF03          | Login |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | -                             | 
+| **Desenvolvedor**         | Gabriel, Breno e Ricardo                                  | 
+| **Revisor**               | -                               | 
+| **Testador**              | -                                | 
+
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA05.01** | Ao entrar no sistema o usuário será referido a uma tela de login, contendo dois campos: Login e Senha |
+| **TA05.01** | O usuário coloca seu Login e Senha |
+| **TA05.01** | O sistema exibe uma mensagem de “Login realizado com sucesso”, enquanto o sistema carrega |
+| **TA05.01** | O usuário agora pode interagir com o sistema |
