@@ -44,41 +44,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA01.01** |  O gerente solicita ao RH os documentos do funcionário|
-| **TA01.01** | O RH manda os documentos e o gerente os recebe |
-| **TA01.01** | O gerente acessa o sistema com sua conta administrador (include Login)|
-| **TA01.01** | O gerente preenche o cadastro com as informações recebidas|
-| **TA01.01** | O gerente instrui o funcionário a escolher uma senha para seu Login|
-| **TA01.01** | O gerente conclui o cadastro e salva as informações |
-| **TA01.01** | O sistema exibe uma mensagem de “Cadastro realizada com sucesso”|
+| **TA01.01** |  |
 
---------------------------------------------------------------------------------------
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA01.02** | O gerente informa ao sistema o CPF do funcionário no sistema (include Login)|
-| **TA01.02** | O sistema exibe na tela todas as informações do funcionário |
--------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA01.03** | O gerente consulta o cadastro do funcionário no sistema (include Login)|
-| **TA01.03** | O gerente clica na opção excluir cadastro |
-| **TA01.03** | O sistema abre uma caixa de confirmação perguntando se o gerente realmente deseja excluir o funcionário|
-| **TA01.03** | O gerente escolhe a opção “SIM”|
-| **TA01.03** | O sistema exclui o funcionário e as alterações são salvas no sistema|
-| **TA01.03** | O sistema exibe uma mensagem de “Exclusão realizada com sucesso” |
-------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**  | **Descrição** |
-| **TA01.04** | O RH solicita que o cadastro do funcionário seja atualizado|
-| **TA01.04** | O gerente solicita ao RH as informações necessárias para atualização |
-| **TA01.04** | O gerente localiza o cadastro do funcionário no sistema (include Login) |
-| **TA01.04** | O gerente altera as informações e salva no sistema|
-| **TA01.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso” |
 
 ### User Story US02 - Gerenciar produto
 
@@ -106,40 +73,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA02.01** | O funcionário solicita uma amostra do produto para pode pegar suas informações|
-| **TA02.01** | O funcionário recebe o produto  |
-| **TA02.01** | O funcionário acessa o sistema com sua conta (include Login)|
-| **TA02.01** | O funcionário preenche o cadastro com as informações descritas no produto|
-| **TA02.01** | O funcionário conclui o cadastro e salva as informações (extend Gerar Log) |
-| **TA02.01** | O sistema exibe uma mensagem de “Cadastro realizada com sucesso”|
-
---------------------------------------------------------------------------------------
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA02.02** | O funcionário informa ao sistema o código de barras do produtor no sistema (include Login)|
-| **TA02.02** | O sistema exibe na tela todas as informações do fornecedor |
--------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA02.03** | O funcionário consulta o cadastro do produto no sistema (include Login)|
-| **TA02.03** | O funcionário clica na opção excluir cadastro |
-| **TA02.03** | O sistema abre uma caixa de confirmação perguntando se o funcionário realmente deseja excluir o produto|
-| **TA02.03** | O funcionário escolhe a opção “SIM”|
-| **TA02.03** | O sistema exclui o produto e as alterações são salvas no sistema (extend Gerar Log)|
-| **TA02.03** | O sistema exibe uma mensagem de “Exclusão realizada com sucesso” |
-------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**  | **Descrição** |
-| **TA02.04** | O funcionário recebe a informação que um cadastro está com problema|
-| **TA02.04** | O funcionário solicita uma amostra do produto para que possa pegar os dados corretos |
-| **TA02.04** | O funcionário localiza o cadastro do produto no sistema (include Login) |
-| **TA02.04** | O funcionário altera as informações e salva no sistema. (extend Gerar Log) |
-| **TA02.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso”|
 
 ### User Story US03 - Gerenciar fornecedor
 
@@ -168,40 +101,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA03.01** | O funcionário solicita os documentos e informações necessárias diretamente ao fornecedor |
-| **TA03.01** | O fornecedor manda os documentos e o funcionário os recebe |
-| **TA03.01** | O funcionário acessa o sistema com sua conta (include Login)|
-| **TA03.01** | O funcionário preenche o cadastro com as informações recebidas |
-| **TA03.01** | O funcionário conclui o cadastro e salva as informações (extend Gerar Log) |
-| **TA03.01** | O sistema exibe uma mensagem de “Cadastro realizado com sucesso” |
+| **TA01.01** |  |
 
---------------------------------------------------------------------------------------
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA03.02** | O funcionário informa ao sistema o CNPJ do fornecedor no sistema (include Login) |
-| **TA03.02** | O sistema exibe na tela todas as informações do fornecedor |
--------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA03.03** | O funcionário consulta o cadastro do fornecedor no sistema (include Login) |
-| **TA03.03** | O funcionário clica na opção excluir cadastro |
-| **TA03.03** | O sistema abre uma caixa de confirmação perguntando se o funcionário realmente deseja excluir o fornecedor |
-| **TA03.03** | O funcionário escolhe a opção “SIM” |
-| **TA03.03** | O sistema exclui o fornecedor e as alterações são salvas no sistema (extend Gerar Log) |
-| **TA03.03** | O sistema exibe uma mensagem de “Exclusão realizada com sucesso” |
-------------------------------------------------------------------------------------
-
-| Testes de Aceitação (TA) |  |
-| ----------- | --------- |
-| **Código**      | **Descrição** |
-| **TA03.04** | O fornecedor solicita que o seu cadastro seja atualizado |
-| **TA03.04** | O funcionário solicita ao fornecedor as informações necessárias para atualização |
-| **TA03.04** | O funcionário localiza o cadastro do fornecedor no sistema (include Login) |
-| **TA03.04** | O funcionário altera as informações e salva no sistema. (extend Gerar Log) |
-| **TA03.04** | O sistema exibe uma mensagem de “Alteração realizada com sucesso” |
 
 ### User Story US04 - Gerar log
 
@@ -233,9 +134,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA04.01** | O funcionário solicitará que o Gerar Log gere um arquivo para verificação. |
-| **TA04.01** | O Gerar Log então pegará o arquivo gerado pelo caso de uso Gerenciar Fornecedores, Gerenciar Produtos e Registrar Entradas, e os justará em um único arquivo. |
-| **TA04.01** | O Gerar Log então retornará um arquivo para o funcionário com as informações geradas. |
+| **TA01.01** |  |
 
 ### User Story US05 - Login
 
@@ -265,12 +164,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA05.01** | Ao entrar no sistema o usuário será referido a uma tela de login, contendo dois campos: Login e Senha |
-| **TA05.01** | O usuário coloca seu Login e Senha |
-| **TA05.01** | O sistema exibe uma mensagem de “Login realizado com sucesso”, enquanto o sistema carrega |
-| **TA05.01** | O usuário agora pode interagir com o sistema |
-
-### User Story US06 - Registrar entradas
+| **TA01.01** |  |
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -297,10 +191,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA06.01** | O Registrar Entradas analisa automaticamente os arquivos de Gerenciar Produtos e Gerenciar Fornecedores a procura de novas entradas de produtos |
-| **TA06.01** | O Registrar Entradas organizará esses dados em um arquivo |
-
-### User Story US07 - Registrar saídas (venda)
+| **TA01.01** |  |
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -327,8 +218,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA07.01** | O Sistema de vendas fornecerá os dados referentes às saídas para o Registrar saídas |
-| **TA07.01** | Registrar saídas organizará esses dados em um arquivo |
+| **TA01.01** |  |
 
 ### User Story US08 - Registrar Compras
 
@@ -357,5 +247,4 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA08.01** | Ao detectar a falta de um produto o gerente irá requisitar a compra do mesmo para reabastecimento do estoque |
-| **TA08.01** | Caberá ao funcionário dar baixa no sistema quando os itens chegarem ao estoque |
+| **TA01.01** |  |
