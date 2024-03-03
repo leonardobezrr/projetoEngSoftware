@@ -43,9 +43,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
-
 
 ### User Story US02 - Gerenciar produto
 
@@ -72,7 +71,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
+| **TA01.01** |  |
 
 ### User Story US03 - Gerenciar fornecedor
 
@@ -100,9 +100,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
-
 
 ### User Story US04 - Gerar log
 
@@ -133,7 +132,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
 
 ### User Story US05 - Login
@@ -163,8 +162,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
+
+### User Story US06 - Registrar entradas
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -190,8 +191,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
+
+### User Story US07 - Registrar saídas (venda)
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -217,7 +220,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
 
 ### User Story US08 - Registrar Compras
@@ -246,5 +249,5 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
-| **Código**      | **Descrição** |
+| **Código**     | **Descrição** |
 | **TA01.01** |  |
