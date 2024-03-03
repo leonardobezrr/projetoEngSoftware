@@ -18,7 +18,7 @@ Charles      | Desenvolvedor | charleseduardofaria@gmail.com
 
 Membro     |     Competências   |
 ---------  | ----------- |
-Breno    | Python , C, HTML, CSS e Javascript, React, Next, Typescript e Figma. |
+Breno    | HTML, CSS, Javascript, React, Next, Typescript, Prisma e Figma. |
 Leonardo     | HTML, CSS, JavaScript, React, Next, Golang, PostgreSQL, Python. |
 Ricardo        | HTML, CSS, JavaScript, React, Golang, MySQL, PostgreSQL, PHP, WordPress, curso ténico em informática. |
 Luís       | HTML, CSS, Javascript , C, C++, QT creator, QT designer. |
