@@ -15,9 +15,9 @@ Luis Felipe dos Santos Tolentino
 Ricardo Alencar de Medeiros Filho
 
 ## Repositório front-end:
-[Link text]('https://github.com/leonardobezrr/sig-estoque-front-end')
+[Front-end](https://github.com/leonardobezrr/sig-estoque-front-end)
 <br>
 
 ## Repositório back-end:
-[Link text]('https://github.com/leonardobezrr/sig-estoque-back-end')
+[Back-end](https://github.com/leonardobezrr/sig-estoque-back-end)
 
