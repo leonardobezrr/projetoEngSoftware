@@ -37,17 +37,39 @@ Funcionário | Este usuário utiliza o sistema para gerenciar produtos. Fazer ca
 
 ## Lista de Requisitos Funcionais
 
+### Gerenciar usuários
+
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-RF001 - Gerenciar usuários     |  Funcionalidade exclusiva do administrador do sistema. Fazer cadastro, exclusão, edição e visualização de usuários. | Administrador |
-RF002 - Gerenciar produtos | Funcionalidade destinada ao funcionário do sistema. Fazer cadastro, exclusão, edição, visualização dos produtos no sistema e pesquisa. | Administrador |
-RF003 - Login | Funcionalidade realizada por outros usuários, para obter acesso ao sistema, recuperar senha e alterar informações dos usuários. | Administrador |
-RF004 - Registrar Nota Fiscal Eletrônica de entrada |  Registrar a Nota Fiscal recebida pelo fornecedor no momento que for realizada uma compra, contabilizando o item no estoque. | Administrador |
-RF005 - Gerar Nota Fiscal Eletrônica de Saída |  Registrar a Nota Fiscal no momento que houver a saída de algum item, debitando o item no estoque. | Administrador |
-RF006 - Gerenciar Fornecedores | Possibilidade de cadastrar fornecedores, guardando seus dados para futuras compras. | Administrador |
-RF007 - Gerar Log | Inclui o Requisito Funcional de número 5, mas adiciona a ele os dados do gerenciamento de produtos e do registro de entradas, a fim de criar um arquivo mais amplo que o RF005, assim, permitindo ver as coisas a parti de um escopo geral, diferente que requisito citado anteriormente, que é focado nas somente nas entradas.
- | Chefes e Coordenadores |
-RF008 - Registrar compra |  o gerente será informado da falta de algum material/produto, e poderá realizar a compra do mesmo para reabastecimento do estoque, logo em seguida o caberá ao funcionário dar baixa na entrada do itens no sistema. | Administrador |
+RF001 - Cadastrar usuários     |  Funcionalidade exclusiva do administrador do sistema onde o mesmo irá realizar o cadastro de usuários | Administrador |
+RF002 - Excluir usuários     |  Funcionalidade exclusiva do administrador do sistema onde o mesmo irá realizar a exclusão dos usuários | Administrador |
+RF003 - Editar usuários     |  Funcionalidade exclusiva do administrador do sistema onde o mesmo irá realizar a edição dos usuários | Administrador |
+RF004 - Visualizar usuários     |  Funcionalidade exclusiva do administrador do sistema onde o mesmo poderá visualizar os usuários | Administrador |
+
+### Gerenciar produtos
+
+Requisito                                 | Descrição   | Ator |
+---------                                 | ----------- | ---------- |
+RF005 - Cadastrar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando o cadastro de produtos no sistema | Administrador |
+RF006 - Excluir produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a exclusão de produtos do sistema. | Administrador |
+RF007 - Editar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a editação de produtos do sistema. | Administrador |
+RF008 - Visualizar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a visualização de produtos do sistema | Administrador |
+
+### Gerenciar fornecedores
+
+Requisito                                 | Descrição   | Ator |
+---------                                 | ----------- | ---------- |
+RF009 - Cadastrar fornecedores | Possibilidade de cadastrar fornecedores, guardando seus dados para futuras compras. | Administrador |
+RF010 - Excluir fornecedores | Possibilidade de excluir fornecedores do sistema. | Administrador |
+RF011 - Editar fornecedores | Possibilidade de editar fornecedores do sistema. | Administrador |
+RF012 - Visualizar fornecedores | Possibilidade de visualizar fornecedores do sistema. | Administrador |
+
+Requisito                                 | Descrição   | Ator |
+---------                                 | ----------- | ---------- |
+RF013 - Login | Funcionalidade realizada por outros usuários, para obter acesso ao sistema, recuperar senha e alterar informações dos usuários. | Administrador |
+RF014 - Registrar Nota Fiscal Eletrônica |  Registrar a Nota Fiscal recebida pelo fornecedor no momento em que for realizada uma compra, contabilizando o item no estoque e, no momento em que houver a saída de algum item, debitando o item no estoque | Administrador |
+RF015 - Gerar Log | O requisito funcional de número 14 é incluído, porém, são adicionados a ele os dados do gerenciamento de produtos e do registro de entradas, a fim de criar um arquivo mais amplo que o RF014, permitindo, assim, visualizar as informações a partir de um escopo geral, diferente do requisito citado anteriormente, que é focado apenas nas entradas.
+RF016 - Registrar compra |  o gerente será informado da falta de algum material/produto, e poderá realizar a compra do mesmo para reabastecimento do estoque, logo em seguida o caberá ao funcionário dar baixa na entrada do itens no sistema. | Administrador |
 
 ### Modelo Conceitual
 
