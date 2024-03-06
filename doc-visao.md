@@ -69,7 +69,8 @@ Requisito                                 | Descrição   | Ator |
 RF013 - Login | Funcionalidade realizada por outros usuários, para obter acesso ao sistema, recuperar senha e alterar informações dos usuários. | Administrador |
 RF014 - Registrar Nota Fiscal Eletrônica |  Registrar a Nota Fiscal recebida pelo fornecedor no momento em que for realizada uma compra, contabilizando o item no estoque e, no momento em que houver a saída de algum item, debitando o item no estoque | Administrador |
 RF015 - Gerar Log | O requisito funcional de número 14 é incluído, porém, são adicionados a ele os dados do gerenciamento de produtos e do registro de entradas, a fim de criar um arquivo mais amplo que o RF014, permitindo, assim, visualizar as informações a partir de um escopo geral, diferente do requisito citado anteriormente, que é focado apenas nas entradas.
-RF016 - Registrar compra |  o gerente será informado da falta de algum material/produto, e poderá realizar a compra do mesmo para reabastecimento do estoque, logo em seguida o caberá ao funcionário dar baixa na entrada do itens no sistema. | Administrador |
+RF016 - Registrar compra |  O funcionário irá informar o gerente da falta de algum material/produto, o qual irá realizar a compra do mesmo para reabastecimento do estoque, em seguida, caberá ao funcionário dar baixa dos itens no sistema. | Funcionário |
+
 
 ### Modelo Conceitual
 
