@@ -26,7 +26,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Gerenciar usuários |
+| US01.RF01          | Cadastrar usuários |
+| US01.RF02          | Excluir usuários |
+| US01.RF03          | Editar usuários |
+| US01.RF04          | Visualizar usuários |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -54,7 +57,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF02          | Gerenciar produto  |
+| US02.RF05          | Cadastrar produtos |
+| US02.RF06          | Excluir produtos |
+| US02.RF07          | Editar produtos |
+| US02.RF08          | Visualizar produtos |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -82,7 +88,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF06         | Gerenciar Fornecedores |
+| US03.RF09          | Cadastrar fornecedores |
+| US03.RF10          | Excluir fornecedores |
+| US03.RF11          | Editar fornecedores |
+| US03.RF12          | Visualizar fornecedores |
 
 
 |                           |                                     |
@@ -111,11 +120,16 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF02          | Gerenciar produtos  |
-| RF04          | Registrar Nota Fiscal Eletrônica de entrada |
-| RF05          | Gerar Nota Fiscal Eletrônica de Saída |
-| RF06          | Gerenciar Fornecedores |
-| RF07          | Gerar Log |
+| US04.RF05          | Cadastrar produtos |
+| US04.RF06          | Excluir produtos |
+| US04.RF07          | Editar produtos |
+| US04.RF08          | Visualizar produtos |
+| US04.RF09          | Cadastrar fornecedores |
+| US04.RF10          | Excluir fornecedores |
+| US04.RF11          | Editar fornecedores |
+| US04.RF12          | Visualizar fornecedores |
+| US04.RF014          | Registrar Nota Fiscal Eletrônica |
+| US04.RF015          | Gerar Log |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -143,9 +157,15 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Gerenciar usuários  |
-| RF02          | Gerenciar produtos |
-| RF03          | Login |
+| US05.RF01          | Cadastrar usuários |
+| US05.RF02          | Excluir usuários |
+| US05.RF03          | Editar usuários |
+| US05.RF04          | Visualizar usuários |
+| US05.RF05          | Cadastrar produtos |
+| US05.RF06          | Excluir produtos |
+| US05.RF07          | Editar produtos |
+| US05.RF08          | Visualizar produtos |
+| US05.RF013          | Login |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -173,7 +193,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF04          | Registrar Nota Fiscal Eletrônica de entrada  |
+| US06.RF014         | Registrar Nota Fiscal Eletrônica  |
 
 
 |                           |                                     |
@@ -202,7 +222,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF05          | Gerar Nota Fiscal Eletrônica de Saída  |
+| US07.RF014         | Registrar Nota Fiscal Eletrônica  |
 
 
 |                           |                                     |
@@ -231,7 +251,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF05          | Gerar Nota Fiscal Eletrônica de Saída  |
+| US08.RF014         | Registrar Nota Fiscal Eletrônica  |
 
 
 |                           |                                     |
