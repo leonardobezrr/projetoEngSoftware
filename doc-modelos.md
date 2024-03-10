@@ -13,6 +13,11 @@ classDiagram
     Pessoa "1" *-- "1..*" Contato
     Pessoa "1" *-- "1" Endereco
     Pessoa "1" -- "*" PessoaFisica
+    Pessoa "1" -- "*" PessoaJuridica
+    Produto "1" -- "*" Movimentacao
+    Produto "1" -- "*" ItensNFE
+    NFE "1" -- "*" ItensNFE
+
     class Contato {
         -char Email
         -char Telefone
@@ -93,6 +98,108 @@ classDiagram
         +AlterarPessoaFisica(PessoaFisica pessf) void
         +ConsultarPessoaFisica(char CPF, Pessoa pessoa) PessoaFisica
         +ConsultarPessoaFisica() PessoaFisica
+    }
+    class Produto {
+        -char Nome
+        -int CodigoBarras
+        -char Validade
+        -PessoaJuridica Fornecedor
+        +consultarProduto(int codigoBarras) void
+        +setNome(char Nome) void
+        +setCodigoBarras(int codigoBarras) void
+        +setValidade(char Validade) void
+        +getNome() char
+        +getCodigoBarras() int
+        +getValidade() char
+        +IncluirProduto(Produto prod) void 
+        +ExcluirProduto(Produto prod) void
+        +AlterarProduto(Produto prod) void
+        +ConsultarProduto(char Nome, char CodigoBarras) Produto
+        +ConsultarProduto() Produto
+    }
+    class PessoaJuridica {
+        -char CNPJ
+        -Pessoa Pessoa
+        +setCNPJ(char CNPJ) void
+        +getCNPJ() char
+        +ValidarCNPJ(char CNPJ) bool
+        +IncluirPessoaJuridica(PessoaJuridica pessf) void
+        +ExcluirPessoaJuridica(PessoaJuridica pessf) void
+        +AlterarPessoaJuridica(PessoaJuridica pessf) void
+        +ConsultarPessoaJuridica(char CPF, Pessoa pessoa) PessoaJuridica
+        +ConsultarPessoaJuridica() PessoaJuridica
+    }
+    class Movimentacao {
+        -int ID
+        -Produto Produtos
+        -int Quantidade
+        -float ValorTotal
+        +setID(int ID) void
+        +setData(char Data) void
+        +setProdutos(Produto Produtos) void
+        +setQuantidade(int Quantidade) void
+        +setValorTotal(float Valor) void
+        +getID() int
+        +getData() char
+        +getProdutos() Produto
+        +getQuantidade() int
+        +getValorTotal() float
+        +calcularValorTotal() float
+        +IncluirMovimentacao(Movimentacao movi) void
+        +ExcluirMovimentacao(Movimentacao movi) void
+        +AlterarMovimentacao(Movimentacao movi) void
+        +ConsultarMovimentacao(int ID, Produto Produtos) Movimentacao
+        +ConsultarMovimentacao() Movimentacao
+    }
+    class ItensNFE {
+        -Produto Produtos
+        -int Quantidade
+        -float ValorUnitario
+        -float ValorLote
+        +setQuantidade(int Quantidade) void
+        +setValorUnitario(float ValorUnitario) void
+        +setValorLote(float ValorLote) void
+        +getQuantidade() int
+        +getValorUnitario() float
+        +getValorLote() float
+        +IncluirItensNFE(ItensNFE itensNFE) void
+        +ExcluirItensNFE(ItensNFE itensNFE) void
+        +AlterarItensNFE(ItensNFE itensNFE) void
+        +ConsultarItensNFE(Produto Produtos) NFE
+        +ConsultarItensNFE() ItensNFE
+    }
+    class NFE {
+        -char NumeroNFE
+        -char DataEmissao
+        -float ValorTotal
+        -Cliente Cliente
+        -PessoaJuridica Vendedor
+        -char FormaPagamento
+        -char Status
+        -ItensNFE ItensNFe
+        +calcularValorTotal() void
+        +calcularImpostos() void
+        +gerarNumeroNFE() void
+        +cancelarNFE() void
+        +gerarPDF() void
+        +enviarPorEmail() void
+        +consultarStatus() void
+        +emitirNFE() void
+        +setNumeroNFE(char NumeroNFE) void
+        +setDataEmissao(char DataEmissao) void
+        +setValorTotal(char ValorTotal) void
+        +setFormaPagamento(char FormaPagamento) void
+        +setStatus(char Status) void
+        +getNumeroNFE() char
+        +getDataEmissao() char
+        +getValorTotal() float
+        +getFormaPagamento() char
+        +getStatus() char
+        +IncluirGerarNFE(NFE nfe) void
+        +ExcluirGerarNFE(NFE nfe) void
+        +AlterarGerarNFE(NFE nfe) void
+        +ConsultarGerarNFE(char NumeroNFE, char DataEmissao, PessoaJuridica Vendedor) NFE
+        +ConsultarGerarNFE() NFE
     }
 ```
 
