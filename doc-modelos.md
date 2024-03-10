@@ -10,6 +10,9 @@ Para a modelagem pode se usar o Astah UML ou o BrModelo. Uma ferramenta interess
 
 ```mermaid
 classDiagram
+    Pessoa "1" *-- "1..*" Contato
+    Pessoa "1" *-- "1" Endereco
+    Pessoa "1" -- "*" PessoaFisica
     class Contato {
         -char Email
         -char Telefone
@@ -48,6 +51,49 @@ classDiagram
         +ConsultarEndereço(char Rua, int CEP, char EstadoSigla) Endereco
         +ConsultarEndereco() Endereco        
     }
+    class Pessoa {
+        -char Nome
+        -Contato contato
+        -bool Gerente
+        -double Salario
+        -char Login
+        -char Senha
+        -Endereco endereco
+        +ValidarCPF(char CPF) bool
+        +CriarLogin(bool Gerente, char Login, char Senha) void
+        +ValidarLogin(char Login, char Senha) bool 
+        +setNome(char Nome) void
+        +setCPF(char CPF) void
+        +setContato(Contato contato) void
+        +setGerente(bool Gerente) void
+        +setSalario(double Salario) void
+        +setLogin(char Login) void
+        +setSenha(char Senha) void
+        +getNome() char
+        +getCPF() char
+        +getContato() Contato
+        +getGerente() bool
+        +getSalario() double
+        +getLogin() char
+        +getSenha() char
+        +IncluirPessoa(Pessoa pess) void
+        +ExcluirPessoa(Pessoa pess) void
+        +AlterarPessoa(Pessoa pess) void
+        +ConsultarPessoa(char Nome, char Login) Pessoa
+        +ConsultarPessoa() Pessoa
+    }
+    class PessoaFisica {
+        -char CPF
+        -Pessoa Pessoa
+        +setCNPJ(char CNPJ) void
+        +getCNPJ() char
+        +ValidarCNPJ(char CNPJ) bool
+        +IncluirPessoaFisica(PessoaFisica pessf) void
+        +ExcluirPessoaFisica(PessoaFisica pessf) void
+        +AlterarPessoaFisica(PessoaFisica pessf) void
+        +ConsultarPessoaFisica(char CPF, Pessoa pessoa) PessoaFisica
+        +ConsultarPessoaFisica() PessoaFisica
+    }
 ```
 
 ### Descrição das Entidades
@@ -56,10 +102,10 @@ Descrição sucinta das entidades presentes no sistema.
 
 | Entidade | Descrição   |
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Animal   | Entidade abstrata para representar informações gerais dos Animais: age, gender, isMammal(), mate().                                                  |
-| Duck     | Entidade que representa um Pato tem as informações: String beakColor, +swim(), +quack(). A classe Duck estende a classe abstrata Animal. |
-| Fish     | Entidade que representa um Peixe tem as informações: sizeInFeet, -canEat(). A classe Peixe estende a classe abstrata Animal.                                                                   |
-| Zebra    | Entidade que representa um Zebra tem as informações is_wild, run(). A classe Zebra estende a classe abstrata Animal.                                                                   |
+| Pessoa   | |
+| Endereco | |
+| Contato  | Entidade que representa um Contato tem as informações: Email, Telefone, +setEmail(char Email), +setTelefone(char Telefone), +getEmail(), +IncluirContato(cont Contato), +ExcluirContato(cont Contato),  +AlterarContato(cont Contato),+ConsultarContato(char Email, char Telefone), +ConsultarContato().|
+| PessoaFisica | Entidade que representa uma Pessoa Fisica tem as informações: CPF, Pessoa, +setCNPJ(char CNPJ), +getCNPJ(), +ValidarCNPJ(char CNPJ), +IncluirPessoaFisica(PessoaFisica pessf), +ExcluirPessoaFisica(PessoaFisica pessf), +AlterarPessoaFisica(PessoaFisica pessf), +ConsultarPessoaFisica(char CPF, Pessoa pessoa), +ConsultarPessoaFisica().|
 
 ## Modelo de Dados (Entidade-Relacionamento)
 
