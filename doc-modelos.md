@@ -9,15 +9,19 @@ Para a modelagem pode se usar o Astah UML ou o BrModelo. Uma ferramenta interess
 ### Diagrama de Classes usando Mermaid
 
 ```mermaid
-classDiagram
+classDiagram    
     Pessoa "1" *-- "1..*" Contato
     Pessoa "1" *-- "1" Endereco
-    Pessoa "1" -- "*" PessoaFisica
     Pessoa "1" -- "*" PessoaJuridica
-    Produto "1" -- "*" Movimentacao
-    Produto "1" -- "*" ItensNFE
-    NFE "1" -- "*" ItensNFE
-
+    Pessoa "1" -- "*" PessoaFisica
+    PessoaFisica "" -- "" Saida
+    PessoaJuridica "*" -- "1" Entradas
+    Movimentacao "*" -- "1" Saida
+    Movimentacao "*" -- "1" Entradas
+    Movimentacao "*" -- "1" Produto
+    Produto "*" -- "1" ItensNFE
+    ItensNFE "*" -- "1" NFE
+    NFE "1" -- "1" Entradas
     class Contato {
         -char Email
         -char Telefone
@@ -200,6 +204,38 @@ classDiagram
         +AlterarGerarNFE(NFE nfe) void
         +ConsultarGerarNFE(char NumeroNFE, char DataEmissao, PessoaJuridica Vendedor) NFE
         +ConsultarGerarNFE() NFE
+    }
+    class Saida {
+        -PessoaFisica DestinoCliente
+        -char Data
+        +setdestinoCliente(Cliente cliente) void
+        +getdestinoCliente() cliente
+        +retiradaProdutos() void
+        +gerarLog() void
+        +incluirSaida(Saida saida) void
+        +consultarSaida(char Nome) void
+        +listarSaidas() ArraySaida
+        +IncluirSaida(Saida saida) void
+        +ExcluirSaida(Saida saida) void
+        +AlterarSaida(Saida saida) void
+        +ConsultarSaida(char Data, PessoaFisica DestinoCliente) Saida
+        +ConsultarSaida() Saida
+    }
+    class Entradas {
+        -PessoaJuridica OrigemFornecedor
+        -char Data
+        +setOrigemFornecedor(PessoaJuridica fornecedor) void
+        +getOrigemFornecedor() PessoaJuridica
+        +receberProdutos() void
+        +gerarLog() void
+        +incluirEntrada(Entrada entrada) void
+        +consultarEntrada(char Nome) Entrada
+        +listarEntradas() ArrayEntradas
+        +IncluirEntradas(Entrada entr) void
+        +ExcluirEntradas(Entrada entr) void
+        +AlterarEntradas(Entrada entr) void
+        +ConsultarEntradas(char Data, PessoaJuridica OrigemFornecedor) Entradas
+        +ConsultarEntradas() Entradas
     }
 ```
 
