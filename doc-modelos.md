@@ -106,15 +106,12 @@ classDiagram
     class Produto {
         -char Nome
         -int CodigoBarras
-        -char Validade
         -PessoaJuridica Fornecedor
         +consultarProduto(int codigoBarras) void
         +setNome(char Nome) void
         +setCodigoBarras(int codigoBarras) void
-        +setValidade(char Validade) void
         +getNome() char
         +getCodigoBarras() int
-        +getValidade() char
         +IncluirProduto(Produto prod) void 
         +ExcluirProduto(Produto prod) void
         +AlterarProduto(Produto prod) void
@@ -250,7 +247,7 @@ Descrição sucinta das entidades presentes no sistema.
 | Contato  | Entidade que representa um Contato tem as informações: Email, Telefone, +setEmail(char Email), +setTelefone(char Telefone), +getEmail(), +IncluirContato(cont Contato), +ExcluirContato(cont Contato),  +AlterarContato(cont Contato),+ConsultarContato(char Email, char Telefone), +ConsultarContato().|
 | PessoaFisica | Entidade que representa uma Pessoa Fisica tem as informações: CPF, Pessoa, +setCNPJ(char CNPJ), +getCNPJ(), +ValidarCNPJ(char CNPJ), +IncluirPessoaFisica(PessoaFisica pessf), +ExcluirPessoaFisica(PessoaFisica pessf), +AlterarPessoaFisica(PessoaFisica pessf), +ConsultarPessoaFisica(char CPF, Pessoa pessoa), +ConsultarPessoaFisica().|
 | PessoaJuridica | Entidade que representa uma Pessoa Juridica tem as informações: CNPJ, Pessoa, +setCNPJ(char CNPJ), +getCNPJ(), +ValidarCNPJ(char CNPJ), +IncluirPessoaJuridica(PessoaJuridica pessf), +ExcluirPessoaJuridica(PessoaJuridica pessf), +AlterarPessoaJuridica(PessoaJuridica pessf), +ConsultarPessoaJuridica(char CPF, Pessoa pessoa), +ConsultarPessoaJuridica().|
-| Produto | Entidade que representa um Produto tem as informações: Nome, CodigoBarras, Validade, Fornecedor, +consultarProduto(int codigoBarras), +setNome(char Nome), +setCodigoBarras(int codigoBarras), +setValidade(char Validade), +getNome(), +getCodigoBarras() int, +getValidade(), +IncluirProduto(Produto prod) , +ExcluirProduto(Produto prod), +AlterarProduto(Produto prod), +ConsultarProduto(char Nome, char CodigoBarras), +ConsultarProduto()|
+| Produto | Entidade que representa um Produto tem as informações: Nome, CodigoBarras, Fornecedor, +consultarProduto(int codigoBarras), +setNome(char Nome), +setCodigoBarras(int codigoBarras), +getNome(), +getCodigoBarras() int, +IncluirProduto(Produto prod) , +ExcluirProduto(Produto prod), +AlterarProduto(Produto prod), +ConsultarProduto(char Nome, char CodigoBarras), +ConsultarProduto()|
 | Movimentacao | Entidade que representa uma Movimentacao tem as informações: ID, Produtos, Quantidade, ValorTotal, +setID(int ID), +setData(char Data), +setProdutos(Produto Produtos), +setQuantidade(int Quantidade), +setValorTotal(float Valor), +getID(), +getData(), +getProdutos(), +getQuantidade(), +getValorTotal(), +calcularValorTotal(), +IncluirMovimentacao(Movimentacao movi), +ExcluirMovimentacao(Movimentacao movi), +AlterarMovimentacao(Movimentacao movi), +ConsultarMovimentacao(int ID, Produto Produtos) , +ConsultarMovimentacao().|
 | ItensNFE| Entidade que representa ItensNFE tem as informações: Produtos, Quantidade, ValorUnitario, ValorLote, +setQuantidade(int Quantidade), +setValorUnitario(float ValorUnitario), +setValorLote(float ValorLote), +getQuantidade(), +getValorUnitario(), +getValorLote(), +IncluirItensNFE(ItensNFE itensNFE), +ExcluirItensNFE(ItensNFE itensNFE), +AlterarItensNFE(ItensNFE itensNFE), +ConsultarItensNFE(Produto Produtos), +ConsultarItensNFE().|
 | NFE | Entidade que representa uma NFE tem as informações: NumeroNFE, DataEmissao, ValorTotal, cliente, Vendedor, FormaPagamento, Status, ItensNFe, +calcularValorTotal(), +calcularImpostos(), +gerarNumeroNFE(), +cancelarNFE(), +gerarPDF(), +enviarPorEmail(), +consultarStatus(), +emitirNFE(), +setNumeroNFE(char NumeroNFE), +setDataEmissao(char DataEmissao), +setValorTotal(char ValorTotal), +setFormaPagamento(char FormaPagamento), +setStatus(char Status), +getNumeroNFE() , +getDataEmissao() , +getValorTotal(), +getFormaPagamento() , +getStatus() , +IncluirGerarNFE(NFE nfe), +ExcluirGerarNFE(NFE nfe), +AlterarGerarNFE(NFE nfe), +ConsultarGerarNFE(char NumeroNFE, char DataEmissao, PessoaJuridica Vendedor), +ConsultarGerarNFE().|
