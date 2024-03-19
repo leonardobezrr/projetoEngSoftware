@@ -50,10 +50,10 @@ RF004 - Visualizar usuários     |  Funcionalidade exclusiva do administrador do
 
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-RF005 - Cadastrar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando o cadastro de produtos no sistema | Administrador |
-RF006 - Excluir produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a exclusão de produtos do sistema. | Administrador |
-RF007 - Editar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a editação de produtos do sistema. | Administrador |
-RF008 - Visualizar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a visualização de produtos do sistema | Administrador |
+RF005 - Cadastrar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando o cadastro de produtos no sistema | Funcianário |
+RF006 - Excluir produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a exclusão de produtos do sistema. | Funcianário |
+RF007 - Editar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a editação de produtos do sistema. | Funcianário |
+RF008 - Visualizar produtos | Funcionalidade destinada ao funcionário do sistema possibilitando a visualização de produtos do sistema | Funcianário |
 
 ### Gerenciar fornecedores
 
@@ -97,9 +97,12 @@ Tabela com o mapeamento dos riscos do projeto, as possíveis soluções e os res
 
 Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
 ------ | ------ | ------ | ------ | ------ | ------ |
-04/12/2023 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta | Gerente | Vigente | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
-04/12/2023 |Máquinas incapazes de fornecer os recursos necessários para o funcionamento do sistema | Média | Todos | Vigente | Recomendar a compra de novos dispositivos capazes de fornecer os recursos necessários para o funcionamento pleno do sistema. |
-10/03/2018 | Divisão de tarefas mal sucedida | Baixa | Gerente | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe |
-10/03/2018 | Implementação de protótipo com as tecnologias | Alto | Todos | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema |
+19/03/2024 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta | Gerente | Vigente | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
+19/03/2024 |Máquinas incapazes de fornecer os recursos necessários para o funcionamento do sistema | Média | Todos | Vigente | Recomendar a compra de novos dispositivos capazes de fornecer os recursos necessários para o funcionamento pleno do sistema. |
+19/03/2024 | Divisão de tarefas mal sucedida | Baixa | Gerente | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe |
+19/03/2024 | Implementação de protótipo com as tecnologias | Alto | Todos | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema |
+19/03/2024 | Atrasos no cronograma | Média | Todos | Em Processo | Este risco pode ser causado por uma série de fatores, como a falta de recursos, a falta de planejamento ou a falta de comunicação entre os membros da equipe. Para mitigar este risco, é importante ter um cronograma realista e flexível, e garantir que todos os membros da equipe estejam alinhados com os objetivos do projeto.|
+19/03/2024 | Risco de qualidade do produto | Alto | Todos | Em Processo | Este risco pode ser causado por uma série de fatores, como a falta de atenção aos detalhes ou a falta de testes adequados. Para mitigar este risco, é importante ter uma equipe experiente, garantir que os membros da equipe estejam focados na qualidade do produto e realizar testes rigorosos. |
+19/03/2024 | Insatisfação do cliente | Alto | Todos | Em Processo | Este risco pode ser causado por uma série de fatores, como a falta de comunicação com o cliente, a entrega de um produto que não atende às expectativas do cliente ou a falta de suporte pós-venda. Para mitigar este risco, é importante manter uma comunicação aberta com o cliente, garantir que o produto atenda às expectativas do cliente e oferecer um bom suporte pós-venda. |
 
 ### Referências

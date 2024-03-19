@@ -1,7 +1,7 @@
 
 # Documento Lista de User Stories
 
-Documento construído a partido do **Modelo BSI - Doc 004 - Lista de User Stories** que pode ser encontrado no
+Documento construído a partido do **HistoriasDeUsuario** que pode ser encontrado no
 link: https://docs.google.com/document/d/15KgOK44Be65ad9GpLHBKG5SfhE8z3pzZD6Pqz2Wzu9g/edit
 ## Descrição
 
@@ -11,7 +11,13 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Data       | Versão  | Descrição                          | Autor                          |
 | :--------- | :-----: | :--------------------------------: | :----------------------------- |
-| 05/12/2023 | 1.0  | Documento inicial  | Todos |
+| 05/12/2023 | 0.1  | Documento inicial  | Todos |
+| 29/02/2024 | 0.2  | Criação do doc-visao  | Luís |
+| 01/03/2024 | 0.2  | Criação do doc-userstories  | Luís |
+| 06/03/2024 | 0.2  | Correção do doc-visao  | Leonardo |
+| 09/03/2024 | 0.2  | Criação do doc-modelos  | Luís |
+| 09/03/2024 | 0.2  | Criação do doc-modelos  | Luís |
+| 10/03/2024 | 0.2  | Correção do doc-modelos  | Leonardo |
 | ...        | ...     | ...                                | ...     |
 |  |    | Documento completo com o detalhamento de todos os User Stories |      |
 |  |    | Adição das informações da equipe: Analista, Desenvolvedor, Revisor e Testador. |  |
@@ -47,7 +53,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US02 - Gerenciar produto
 
@@ -78,7 +85,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US03 - Gerenciar fornecedor
 
@@ -106,11 +114,11 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Testador**              | -                                | 
 
 
-
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US04 - Gerar log
 
@@ -147,7 +155,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US05 - Login
 
@@ -183,7 +192,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US06 - Registrar entradas
 
@@ -212,7 +222,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US07 - Registrar saídas (venda)
 
@@ -241,7 +252,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
 
 ### User Story US08 - Registrar Compras
 
@@ -270,4 +282,5 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**     | **Descrição** |
-| **TA01.01** |  |
+| **TA01.01** |  Inserção de dados válidos e corretos para teste de um retorno positivo|
+| **TA01.02** |  Inserção de dados inválidos e/ou incorretos para teste de um retorno negativo|
