@@ -252,39 +252,3 @@ Descrição sucinta das entidades presentes no sistema.
 | Saida| Entidade que representa uma Saida tem as informações: DestinoCliente, Data, +setdestinoCliente(Cliente cliente), +getdestinoCliente() , +retiradaProdutos(), +gerarLog(), +incluirSaida(Saida saida), +consultarSaida(char Nome), +listarSaidas() , +IncluirSaida(Saida saida), +ExcluirSaida(Saida saida), +AlterarSaida(Saida saida), +ConsultarSaida(char Data, PessoaFisica DestinoCliente), +ConsultarSaida().|
 | Entradas| Entidade que representa uma Entrada tem as informações: OrigemFornecedor, Data, +setOrigemFornecedor(PessoaJuridica fornecedor), +getOrigemFornecedor() , +receberProdutos(), +gerarLog(), +incluirEntrada(Entrada entrada), +consultarEntrada(char Nome) , +listarEntradas() , +IncluirEntradas(Entrada entr), +ExcluirEntradas(Entrada entr), +AlterarEntradas(Entrada entr), +ConsultarEntradas(char Data, PessoaJuridica OrigemFornecedor), +ConsultarEntradas(). |
 
-## Modelo de Dados (Entidade-Relacionamento)
-
-Para criar modelos ER é possível usar o BrModelo e gerar uma imagem. Contudo, atualmente é possível criar modelos ER usando a ferramenta **Mermaid**, escrevendo o modelo diretamente em markdown. Acesse a documentação para escrever modelos [ER Diagram Mermaid](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram).
-
-```mermaid
-erDiagram
-    Departamento ||--o{ Laboratorio : labs
-    Departamento ||--|{ Docente : docentes
-    Docente ||--o| Laboratorio : coordenador
-    Docente ||--o| Laboratorio : vice-coordenador
-    Laboratorio ||--o{ Membro_Docente : membros
-    Docente ||--|{ Membro_Docente : ""
-    Laboratorio ||--o{ Membro_Discente : membros
-    Membro_Discente }|--|| Discente: ""
-```
-
-### Dicionário de Dados
-
-|   Tabela   | Laboratório |
-| ---------- | ----------- |
-| Descrição  | Armazena as informações de um laboratório acadêmico. |
-| Observação | Laboratórios acadêmicos podem ser de Ensino, Pesquisa, Extensão, P&D, etc. |
-
-|  Nome         | Descrição                        | Tipo de Dado | Tamanho | Restrições de Domínio |
-| ------------- | -------------------------------- | ------------ | ------- | --------------------- |
-| codigo        | identificador gerado pelo SGBD   | SERIAL       | ---     | PK / Identity |
-| sigla         | representação em sigla do lab    | VARCHAR      | 15      | Unique / Not Null |
-| nome          | nome do laboratório              | VARCHAR      | 150     | Not Null |
-| descricao     | detalhes sobre o laboratório     | VARCHAR      | 250     | --- |
-| endereco      | endereço e localização do lab    | VARCHAR      | 150     | --- |
-| data_criacao  | data de criação do lab           | DATE         | ---     | Not Null |
-| portaria      | portaria de criação do lab       | VARCHAR      | 50      | --- |
-| link_portaria | URL para a portaria (PDF)        | VARCHAR      | 150     | --- |
-| site          | URL para o site do laboratório   | VARCHAR      | 150     | --- |
-| e-mail        | e-mail de contato do laboratório | VARCHAR      | 150     | --- |
-| departamento  | departamento vinculado ao lab    | SERIAL       | ---     | FK / Not Null |

@@ -76,9 +76,233 @@ RF016 - Registrar compra |  O funcionário irá informar o gerente da falta de a
 
 Abaixo apresentamos o modelo conceitual usando o **YUML**.
 
- ![Modelo UML](yuml/monitoria-modelo.png)
-
-O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](doc-modelos.md).
+ ```mermaid
+classDiagram    
+    Pessoa "1" *-- "1..*" Contato
+    Pessoa "1" *-- "1" Endereco
+    Pessoa "1" -- "*" PessoaJuridica
+    Pessoa "1" -- "*" PessoaFisica
+    PessoaFisica "" -- "" Saida
+    PessoaJuridica "*" -- "1" Entradas
+    Movimentacao "*" -- "1" Saida
+    Movimentacao "*" -- "1" Entradas
+    Movimentacao "*" -- "1" Produto
+    Produto "*" -- "1" ItensNFE
+    ItensNFE "*" -- "1" NFE
+    NFE "1" -- "1" Entradas
+    class Contato {
+        -char Email
+        -char Telefone
+        +setEmail(char Email) void
+        +setTelefone(char Telefone) void
+        +getEmail() char
+        +IncluirContato(cont Contato) void
+        +ExcluirContato(cont Contato) void
+        +AlterarContato(cont Contato) void
+        +ConsultarContato(char Email, char Telefone) Contato
+        +ConsultarContato() Contato
+    }
+    class Endereco {
+        -char Rua
+        -char Bairro
+        -char Cidade
+        -int CEP
+        -char Estado
+        -char EstadoSigla
+        +atualizarEndereco() void
+        +setRua(string Rua) void
+        +setBairro(string Bairro) void
+        +setCidade(string Cidade) void
+        +setCEP(int CEP) void
+        +setEstado(string Estado) void
+        +setEstadoSigla(string Sigla) void
+        +getRua() string
+        +getBairro() string
+        +getCidade() string
+        +getCEP() int
+        +getEstadoSigla() string
+        +getEstado() string
+        +IncluirEndereco(ende Endereco) void
+        +ExcluirEndereco(ende Endereco) void
+        +AlterarEndereco(ende Endereco) void
+        +ConsultarEndereço(char Rua, int CEP, char EstadoSigla) Endereco
+        +ConsultarEndereco() Endereco        
+    }
+    class Pessoa {
+        -char Nome
+        -Contato contato
+        -bool Gerente
+        -double Salario
+        -char Login
+        -char Senha
+        -Endereco endereco
+        +ValidarCPF(char CPF) bool
+        +CriarLogin(bool Gerente, char Login, char Senha) void
+        +ValidarLogin(char Login, char Senha) bool 
+        +setNome(char Nome) void
+        +setCPF(char CPF) void
+        +setContato(Contato contato) void
+        +setGerente(bool Gerente) void
+        +setSalario(double Salario) void
+        +setLogin(char Login) void
+        +setSenha(char Senha) void
+        +getNome() char
+        +getCPF() char
+        +getContato() Contato
+        +getGerente() bool
+        +getSalario() double
+        +getLogin() char
+        +getSenha() char
+        +IncluirPessoa(Pessoa pess) void
+        +ExcluirPessoa(Pessoa pess) void
+        +AlterarPessoa(Pessoa pess) void
+        +ConsultarPessoa(char Nome, char Login) Pessoa
+        +ConsultarPessoa() Pessoa
+    }
+    class PessoaFisica {
+        -char CPF
+        -Pessoa Pessoa
+        +setCNPJ(char CNPJ) void
+        +getCNPJ() char
+        +ValidarCNPJ(char CNPJ) bool
+        +IncluirPessoaFisica(PessoaFisica pessf) void
+        +ExcluirPessoaFisica(PessoaFisica pessf) void
+        +AlterarPessoaFisica(PessoaFisica pessf) void
+        +ConsultarPessoaFisica(char CPF, Pessoa pessoa) PessoaFisica
+        +ConsultarPessoaFisica() PessoaFisica
+    }
+    class Produto {
+        -char Nome
+        -int CodigoBarras
+        -PessoaJuridica Fornecedor
+        +consultarProduto(int codigoBarras) void
+        +setNome(char Nome) void
+        +setCodigoBarras(int codigoBarras) void
+        +getNome() char
+        +getCodigoBarras() int
+        +IncluirProduto(Produto prod) void 
+        +ExcluirProduto(Produto prod) void
+        +AlterarProduto(Produto prod) void
+        +ConsultarProduto(char Nome, char CodigoBarras) Produto
+        +ConsultarProduto() Produto
+    }
+    class PessoaJuridica {
+        -char CNPJ
+        -Pessoa Pessoa
+        +setCNPJ(char CNPJ) void
+        +getCNPJ() char
+        +ValidarCNPJ(char CNPJ) bool
+        +IncluirPessoaJuridica(PessoaJuridica pessf) void
+        +ExcluirPessoaJuridica(PessoaJuridica pessf) void
+        +AlterarPessoaJuridica(PessoaJuridica pessf) void
+        +ConsultarPessoaJuridica(char CPF, Pessoa pessoa) PessoaJuridica
+        +ConsultarPessoaJuridica() PessoaJuridica
+    }
+    class Movimentacao {
+        -int ID
+        -Produto Produtos
+        -int Quantidade
+        -float ValorTotal
+        +setID(int ID) void
+        +setData(char Data) void
+        +setProdutos(Produto Produtos) void
+        +setQuantidade(int Quantidade) void
+        +setValorTotal(float Valor) void
+        +getID() int
+        +getData() char
+        +getProdutos() Produto
+        +getQuantidade() int
+        +getValorTotal() float
+        +calcularValorTotal() float
+        +IncluirMovimentacao(Movimentacao movi) void
+        +ExcluirMovimentacao(Movimentacao movi) void
+        +AlterarMovimentacao(Movimentacao movi) void
+        +ConsultarMovimentacao(int ID, Produto Produtos) Movimentacao
+        +ConsultarMovimentacao() Movimentacao
+    }
+    class ItensNFE {
+        -Produto Produtos
+        -int Quantidade
+        -float ValorUnitario
+        -float ValorLote
+        +setQuantidade(int Quantidade) void
+        +setValorUnitario(float ValorUnitario) void
+        +setValorLote(float ValorLote) void
+        +getQuantidade() int
+        +getValorUnitario() float
+        +getValorLote() float
+        +IncluirItensNFE(ItensNFE itensNFE) void
+        +ExcluirItensNFE(ItensNFE itensNFE) void
+        +AlterarItensNFE(ItensNFE itensNFE) void
+        +ConsultarItensNFE(Produto Produtos) NFE
+        +ConsultarItensNFE() ItensNFE
+    }
+    class NFE {
+        -char NumeroNFE
+        -char DataEmissao
+        -float ValorTotal
+        -Cliente Cliente
+        -PessoaJuridica Vendedor
+        -char FormaPagamento
+        -char Status
+        -ItensNFE ItensNFe
+        +calcularValorTotal() void
+        +calcularImpostos() void
+        +gerarNumeroNFE() void
+        +cancelarNFE() void
+        +gerarPDF() void
+        +enviarPorEmail() void
+        +consultarStatus() void
+        +emitirNFE() void
+        +setNumeroNFE(char NumeroNFE) void
+        +setDataEmissao(char DataEmissao) void
+        +setValorTotal(char ValorTotal) void
+        +setFormaPagamento(char FormaPagamento) void
+        +setStatus(char Status) void
+        +getNumeroNFE() char
+        +getDataEmissao() char
+        +getValorTotal() float
+        +getFormaPagamento() char
+        +getStatus() char
+        +IncluirGerarNFE(NFE nfe) void
+        +ExcluirGerarNFE(NFE nfe) void
+        +AlterarGerarNFE(NFE nfe) void
+        +ConsultarGerarNFE(char NumeroNFE, char DataEmissao, PessoaJuridica Vendedor) NFE
+        +ConsultarGerarNFE() NFE
+    }
+    class Saida {
+        -PessoaFisica DestinoCliente
+        -char Data
+        +setdestinoCliente(Cliente cliente) void
+        +getdestinoCliente() cliente
+        +retiradaProdutos() void
+        +gerarLog() void
+        +incluirSaida(Saida saida) void
+        +consultarSaida(char Nome) void
+        +listarSaidas() ArraySaida
+        +IncluirSaida(Saida saida) void
+        +ExcluirSaida(Saida saida) void
+        +AlterarSaida(Saida saida) void
+        +ConsultarSaida(char Data, PessoaFisica DestinoCliente) Saida
+        +ConsultarSaida() Saida
+    }
+    class Entradas {
+        -PessoaJuridica OrigemFornecedor
+        -char Data
+        +setOrigemFornecedor(PessoaJuridica fornecedor) void
+        +getOrigemFornecedor() PessoaJuridica
+        +receberProdutos() void
+        +gerarLog() void
+        +incluirEntrada(Entrada entrada) void
+        +consultarEntrada(char Nome) Entrada
+        +listarEntradas() ArrayEntradas
+        +IncluirEntradas(Entrada entr) void
+        +ExcluirEntradas(Entrada entr) void
+        +AlterarEntradas(Entrada entr) void
+        +ConsultarEntradas(char Data, PessoaJuridica OrigemFornecedor) Entradas
+        +ConsultarEntradas() Entradas
+    }
+```
 
 #### Descrição das Entidades
 
